@@ -59,6 +59,8 @@ const addProductToCart = (productName, price) => {
 const displayProducts = (product) => {
     const productList = document.getElementById('products');
     productList.textContent = '';
+
+    // add cart objects in list
     for (const name in product) {
         const li = document.createElement('li');
         li.className = 'list';
