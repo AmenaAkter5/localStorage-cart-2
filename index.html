@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- Internal CSS -->
+
+    <style>
+        .btn {
+            padding: 10px 30px;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .input-box {
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .list {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wish Lists</h1>
+    <input class="input-box" id="product-input" type="text" placeholder="Product Name">
+    <input class="input-box" id="price-input" type="text" placeholder="price">
+    <button class="btn" onclick="addToCart()">Add to Cart</button>
+    <br>
+    <ul id="products">
+        <!-- It will be set dynamically -->
+    </ul>
+    <button class="btn" onclick="placeOrder()">Add to Cart</button>
+
+    <!-- External JavaScript -->
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
